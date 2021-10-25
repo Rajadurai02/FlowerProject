@@ -1,0 +1,17 @@
+<div class="container">
+    <h3 class="title">Available Products</h3>
+    <div *ngFor="let flower of flowers">
+        <div class="row">
+            <div class="card my-3 col-md-3" style="width: 18rem;">
+                <img class="card-img-top" src="{{flower.flowerPath}}" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title">{{flower.flowerName}}</h3>
+                  <p class="card-text desc">{{flower.flowerDesc}}</p>
+                  <h3 class="card-text price">&#8377; {{flower.flowerPrice}}</h3>
+                  <h5 class="card-text rem">Remaining - {{flower.flowerQty}}</h5>
+                  <button class="btn btn-success" (click)="ToCart(flower.flowerID)">Buy</button>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

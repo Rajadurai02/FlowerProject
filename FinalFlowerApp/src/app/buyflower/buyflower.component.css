@@ -1,0 +1,17 @@
+.row{
+    float: left;
+    position: relative;
+    margin-left: 40px;
+}
+.title,.card-title{
+    text-align: center;
+    margin: 10px;
+    color: purple;
+}
+.desc{
+    text-align: center;
+}
+.price{
+    color:purple;
+    font-size: 25px;
+}

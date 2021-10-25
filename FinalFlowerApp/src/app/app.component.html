@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FlowerShop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="buyflower">Buy Flowers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="addflower">Add Flowers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="cart">Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a class="nav-link" routerLink="login">Login</a>
+          <a class="nav-link" routerLink="register">Register</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <router-outlet></router-outlet>
+  </div> 
+ <!-- <div class="container">
+   <img src="assets/Images/bg-image.jpg" alt="background" style="width: 100%;">
+   <div class="title">
+      New Flower Shop<hr>
+   </div>
+   <div class="Signin">
+     <button class="btn btn-primary" (click)="Signin()">Sign in</button>
+   </div>
+ </div>  -->
+  

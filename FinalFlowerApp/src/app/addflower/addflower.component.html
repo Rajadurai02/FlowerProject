@@ -1,0 +1,34 @@
+
+<div class="alert alert-success">
+    <h2 style="text-align: center;">Add Flower</h2>
+    <form [formGroup]="myForm" (ngSubmit)="AddFlower()" >
+        <label>Flower Name</label>
+    <input type="text" class="form-control" [formControl]="fname">
+    <span *ngIf="fname.valid==false && fname.touched" class="alert alert-danger">
+        flower name cannot be empty
+    </span><br>
+    <label>Flower Description</label>
+    <input type="text" class="form-control" [formControl]="fdesc">
+    <span *ngIf="fdesc.valid==false && fdesc.touched" class="alert alert-danger">
+        flower Description cannot be empty
+    </span>
+    <label>Flower Price</label>
+    <input type="number" class="form-control" [formControl]="fprice">
+    <span *ngIf="fprice.valid==false && fprice.touched" class="alert alert-danger">
+        flower Price cannot be empty
+    </span>
+    <label>Flower Quantity</label>
+    <input type="number" class="form-control" [formControl]="fqty">
+    <span *ngIf="fqty.valid==false && fqty.touched" class="alert alert-danger">
+        flower Quantity cannot be empty
+    </span>
+    <label>Flower Path</label>
+    <input type="text" class="form-control" [formControl]="fpath">
+    <span *ngIf="fqty.valid==false && fqty.touched" class="alert alert-danger">
+        flower path  cannot be empty
+    </span>
+    <button class="btn btn-success">Add Flower</button>
+    </form>
+</div>
+
+

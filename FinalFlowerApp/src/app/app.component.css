@@ -1,0 +1,19 @@
+.container{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.title{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 70px;
+}
+.Signin{
+    position: absolute;
+    bottom: 80px;
+    left: 150px;
+}
+.btn{
+    width: 100px;
+}
